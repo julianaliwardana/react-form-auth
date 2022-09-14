@@ -59,31 +59,29 @@ const Login = () => {
     }
 
     return (
-        <>
-            <div className="container mt-3">
-                <section className="d-flex justify-content-between">
-                    <LoginImage />
-                    <div className="right-section mt-3 p-3" style={{ width: "100%" }}>
-                        <h3 className="text-center" lg={12}>Login</h3>
-                        <Form >
-                            <Form.Group className="mb-3" lg={6} controlId="formBasicEmail">
-                                <Form.Label>Email</Form.Label>
-                                <Form.Control type="email" name="email" onChange={getdata} placeholder="Enter email" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" lg={6} controlId="formBasicPassword">
-                                <Form.Label>Password</Form.Label>
-                                <Form.Control type="password" name="password" onChange={getdata} placeholder="Password" />
-                            </Form.Group>
-                            <Button className="w-100" lg={6} onClick={saveData} style={{ background: "#6c63ff" }} type="submit">
-                                Submit
-                            </Button>
-                        </Form>
-                        <p className="mt-3">Already Have an Account <span><NavLink to="/">Register</NavLink></span> </p>
-                    </div>
-                </section>
-                <ToastContainer />
-            </div>
-        </>
+        <div className="container mt-3">
+            <section className="d-flex justify-content-between">
+                <LoginImage />
+                <div className="right-section mt-3 p-3" style={{ width: "100%" }}>
+                    <h3 className="text-center" lg={12}>Login</h3>
+                    <Form >
+                        <Form.Group className="mb-3" lg={6} controlId="formBasicEmail">
+                            <Form.Label>Email</Form.Label>
+                            <Form.Control type="email" name="email" onChange={getdata} placeholder="Enter email" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" lg={6} controlId="formBasicPassword">
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control type="password" name="password" onChange={getdata} placeholder="Password" />
+                        </Form.Group>
+                        <Button className="w-100" lg={6} onClick={saveData} style={{ background: "#6c63ff" }} type="submit">
+                            Submit
+                        </Button>
+                    </Form>
+                    <p className="mt-3">Already Have an Account <span><NavLink to="/">Register</NavLink></span> </p>
+                </div>
+            </section>
+            <ToastContainer />
+        </div>
     )
 }
 
