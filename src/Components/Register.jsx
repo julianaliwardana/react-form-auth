@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import RegisterImg from './RegisterImg';
+import RegisterImage from './RegisterImage';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -59,7 +59,7 @@ const Register = () => {
         <>
             <Container className="mt-3">
                 <section className="d-flex justify-content-between">
-                    <RegisterImg />
+                    <RegisterImage />
                     <div className="right-section mt-3 p-3 w-100">
                         <h3 className="text-center" lg={12}>Register</h3>
                         <Form>
@@ -75,7 +75,7 @@ const Register = () => {
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control type="password" name="password" onChange={getdata} placeholder="Password" />
                             </Form.Group>
-                            <Button className="w-100" lg={6} onClick={saveData} style={{ background: "rgb(67, 185, 127)" }} type="submit">
+                            <Button className="w-100" lg={6} onClick={saveData} style={{ background: "#6c63ff" }} type="submit">
                                 Submit
                             </Button>
                         </Form>

@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
-import RegisterImg from './RegisterImg';
+import React, { useState } from 'react';
+import { Form, Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import LoginImage from './LoginImage';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -62,7 +62,7 @@ const Login = () => {
         <>
             <div className="container mt-3">
                 <section className="d-flex justify-content-between">
-                    <RegisterImg />
+                    <LoginImage />
                     <div className="right-section mt-3 p-3" style={{ width: "100%" }}>
                         <h3 className="text-center" lg={12}>Login</h3>
                         <Form >
@@ -74,11 +74,11 @@ const Login = () => {
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control type="password" name="password" onChange={getdata} placeholder="Password" />
                             </Form.Group>
-                            <Button lg={6} onClick={saveData} style={{ background: "rgb(67, 185, 127)" }} type="submit">
+                            <Button className="w-100" lg={6} onClick={saveData} style={{ background: "#6c63ff" }} type="submit">
                                 Submit
                             </Button>
                         </Form>
-                        <p className="mt-3">Already Have an Account <span>Register</span> </p>
+                        <p className="mt-3">Already Have an Account <span><NavLink to="/">Register</NavLink></span> </p>
                     </div>
                 </section>
                 <ToastContainer />

@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './Components/Header';
+// import Header from './Components/Header';
 import Register from './Components/Register';
 import Login from './Components/Login';
 import { Routes, Route } from "react-router-dom";
@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path='/' element={<Register />} />
         <Route path='/login' element={<Login />} />
